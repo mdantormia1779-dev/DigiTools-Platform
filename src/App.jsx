@@ -4,6 +4,7 @@ import Mainsection from './Components/Main/Mainsection'
 import Navbar from './Components/Navbar/Navbar'
 import Stats from './Components/Stats/Stats'
 import './index.css'
+import Cards from './Components/Cards/Cards'
 
 function App() {
   const [active, setActive] = useState("Products");
@@ -22,6 +23,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Cards />
     </>
   )
 }

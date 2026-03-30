@@ -6,6 +6,10 @@ import Stats from './Components/Stats/Stats'
 import './index.css'
 import Cards from './Components/Cards/Cards'
 import Cart from './Components/Cart/Cart'
+import Step from './Components/Steps/Step'
+import Pricing from './Components/Pricing/Pricing'
+import Optional from './Components/Optional/Optional'
+import Footer from './Components/Footer/Footer'
 const loadData = async () => {
   const res = await fetch('/data.json');
   return res.json();
@@ -18,7 +22,7 @@ function App() {
   const [cart, setCart] = useState([]);
   return (
     <>
-      <Navbar cart={cart}/>
+      <Navbar cart={cart} />
       <Banner />
       <Stats />
       <Mainsection />
@@ -34,6 +38,10 @@ function App() {
       {
         active === "Products" ? <Cards promiseData={promiseData} cart={cart} setCart={setCart} /> : <Cart cart={cart} setCart={setCart} />
       }
+      <Step />
+      <Pricing />
+      <Optional />
+      <Footer />
     </>
   )
 }

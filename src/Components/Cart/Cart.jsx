@@ -37,7 +37,7 @@ const Cart = ({ cart, setCart }) => {
                         <p className='text-[#101727] font-bold text-2xl'>${total.toFixed(2)}</p>
                     </div>
                     <div>
-                        <button onClick={() => setCart([])} className="btn btn-block bg-[#9514FA] text-white font-bold">Proceed to Checkout</button>
+                        <button onClick={() => {setCart([]),toast.success("completed cheackout")}} className="btn btn-block bg-[#9514FA] text-white font-bold">Proceed to Checkout</button>
                     </div>
                 </div>
             }

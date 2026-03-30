@@ -1,8 +1,8 @@
 import React from 'react';
 import NavImage from '../../assets/DigiTools.png';
-import cardImage from '../../assets/products/shopping-cart.png'
+import cardImage from '/products/shopping-cart.png'
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
     return (
         <div className='bg-white shadow-md py-6'>
             <div className='container mx-auto flex justify-between items-center'>
@@ -20,7 +20,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex justify-center items-center gap-4'>
                     <div className='h-11 w-11 flex items-center justify-center'>
-                        <p className='absolute mb-7 ml-6'>20</p>
+                        <p className='absolute mb-7 ml-6'>{cart.length === 0 ? " " : cart.length}</p>
                         <img src={cardImage} alt="" />
                     </div>
                     <div>

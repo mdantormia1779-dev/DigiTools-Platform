@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { use } from 'react';
 import Card from '../Card/Card';
 
 
-const Cards = () => {
+const Cards = ({promiseData,cart,setCart}) => {
+    const allCard=use(promiseData);
     return (
-        <div className='container mx-auto mt-10'>
-            <Card />
+        <div className='bg-[#FFFFFF] mb-30 mt-10'>
+            <Card allCard={allCard} cart={cart} setCart={setCart}/>
         </div>
     );
 };

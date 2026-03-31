@@ -5,7 +5,7 @@ const Pricing = () => {
         <div className='container mx-auto mt-28 mb-28'>
             <h1 className='text-5xl font-extrabold text-[#101727] text-center mb-4'>Simple, Transparent Pricing</h1>
             <p className='mb-10 text-[#627382] text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
-            <div className='grid grid-cols-3 gap-7'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
                 <div className="card w-96 bg-base-100 shadow-sm">
                     <div className="card-body">
                         <div>

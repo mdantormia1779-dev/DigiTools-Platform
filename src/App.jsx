@@ -39,9 +39,9 @@ function App() {
         active === "Products" ? <Cards promiseData={promiseData} cart={cart} setCart={setCart} /> : <Cart cart={cart} setCart={setCart} />
       }
       <Step />
-      <Pricing />
-      <Optional />
-      <Footer />
+      {/* <Pricing /> */}
+      {/* <Optional /> */}
+      {/* <Footer /> */}
     </>
   )
 }

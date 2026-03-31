@@ -16,11 +16,11 @@ const Card = ({ allCard, cart, setCart }) => {
         toast.success("Item added sucessfully.")
     }
     return (
-        <div className='grid grid-cols-3 gap-8 container mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-7 xl:gap-8 container mx-auto'>
             {
                 allCard.map((card) => {
                     return (
-                        <div key={card.id} className="card w-96 bg-base-100 shadow-sm">
+                        <div key={card.id} className="card bg-base-100 shadow-sm">
                             <div className="card-body">
                                 <div className='flex justify-between'>
                                     <div><img src={card.icon} alt="" /></div>

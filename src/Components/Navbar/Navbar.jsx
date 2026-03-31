@@ -4,12 +4,12 @@ import cardImage from '/products/shopping-cart.png'
 
 const Navbar = ({ cart }) => {
     return (
-        <div className='bg-white shadow-md py-6'>
-            <div className='container mx-auto flex justify-between items-center'>
+        <div className='bg-white shadow-md px-2 py-6 md:p-4 lg:p-8 xl:p-0'>
+            <div className='container mx-auto flex justify-between items-center sm:p-4'>
                 <div>
                     <img src={NavImage} alt="" />
                 </div>
-                <div>
+                <div className='hidden lg:block'>
                     <ul className='flex gap-8 text-[#101727]'>
                         <li>Products</li>
                         <li>Features</li>
@@ -24,7 +24,7 @@ const Navbar = ({ cart }) => {
                         <img src={cardImage} alt="" />
                     </div>
                     <div>
-                        <h2 className='text-[#101727]'>Login</h2>
+                        <h2 className='text-[#101727] hidden md:block'>Login</h2>
                     </div>
                     <div>
                         <button className='btn bg-[#9514FA] text-white font-semibold rounded-full'>Get Started</button>

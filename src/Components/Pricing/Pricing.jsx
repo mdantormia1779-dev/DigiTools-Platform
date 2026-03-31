@@ -2,11 +2,11 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <div className='container mx-auto mt-28 mb-28'>
-            <h1 className='text-5xl font-extrabold text-[#101727] text-center mb-4'>Simple, Transparent Pricing</h1>
+        <div className='container mx-auto mt-28 mb-28 p-4'>
+            <h1 className='text-2xl md:text-3xl lg:text-5xl font-extrabold text-[#101727] text-center mb-4'>Simple, Transparent Pricing</h1>
             <p className='mb-10 text-[#627382] text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
-                <div className="card w-96 bg-base-100 shadow-sm">
+                <div className="card bg-base-100 shadow-sm">
                     <div className="card-body">
                         <div>
                             <h2 className="text-3xl font-bold text-[#101727]">Starter</h2>
@@ -38,7 +38,7 @@ const Pricing = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-[#9514FA] shadow-sm">
+                <div className="card bg-[#9514FA] shadow-sm">
                     <div className='flex justify-center items-center'>
                         <span className="badge badge-xl bg-[#FEF3C6] text-[#BB4D00] badge-warning">Most Popular</span>
                     </div>
@@ -81,7 +81,7 @@ const Pricing = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-sm">
+                <div className="card bg-base-100 shadow-sm">
                     <div className="card-body">
                         <div>
                             <h2 className="text-3xl font-bold text-[#101727]">Enterprise</h2>

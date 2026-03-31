@@ -20,7 +20,7 @@ const Navbar = ({ cart }) => {
                 </div>
                 <div className='flex justify-center items-center gap-4'>
                     <div className='h-11 w-11 flex items-center justify-center'>
-                        <p className='absolute mb-7 ml-6'>{cart.length === 0 ? " " : cart.length}</p>
+                        <p className='absolute mb-7 ml-6 w-7 h-7 flex justify-center items-center rounded-full'>{cart.length === 0 ? " " : cart.length}</p>
                         <img src={cardImage} alt="" />
                     </div>
                     <div>

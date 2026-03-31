@@ -12,7 +12,7 @@ const Card = ({ allCard, cart, setCart }) => {
         }
 
         setCart([...cart, card])
-        setAddedItem({...addedItem,[card.id]:true})
+        setAddedItem({ ...addedItem, [card.id]: true })
         toast.success("Item added sucessfully.")
     }
     return (
@@ -47,7 +47,10 @@ const Card = ({ allCard, cart, setCart }) => {
                                     }
                                 </ul>
                                 <div className="mt-6">
-                                    <button className={`btn btn-primary btn-block ${addedItem[card.id] ? "bg-green-900" : "bg-[#9514FA]"}`} onClick={()=>handleBuy(card)}>{addedItem[card.id] ? "Added to Card" : "Buy Now"}</button>
+                                    <button className={`btn btn-primary btn-block ${addedItem[card.id] ? "bg-green-900" : "bg-[#9514FA]"}`} onClick={() => handleBuy(card)}>{addedItem[card.id] ? (<>
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 mr-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                        Added to Card
+                                    </>) : ("Buy Now")}</button>
                                 </div>
                             </div>
                         </div>)
